@@ -1,0 +1,117 @@
+/**
+ * global.css
+ *
+ * Global styles for the Sovereign Constitutional Engine UI.
+ *
+ * Defines:
+ *  - Theme variables
+ *  - Typography
+ *  - Layout resets
+ *  - Shared UI components
+ *  - Light/dark mode foundations
+ */
+
+/* ------------------------------------------------------------
+   RESET
+------------------------------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ------------------------------------------------------------
+   THEME VARIABLES
+------------------------------------------------------------ */
+
+:root {
+  --bg: #f5f5f5;
+  --text: #222;
+  --panel-bg: #fff;
+  --panel-border: #ccc;
+
+  --accent: #0057ff;
+  --accent-light: #e0ecff;
+
+  --error-bg: #ffccc7;
+  --error-border: #cf1322;
+
+  --warn-bg: #ffe58f;
+  --warn-border: #d4a017;
+}
+
+.dark {
+  --bg: #111;
+  --text: #eee;
+  --panel-bg: #1a1a1a;
+  --panel-border: #333;
+
+  --accent: #4d8dff;
+  --accent-light: #1a2a44;
+
+  --error-bg: #5a1a1a;
+  --error-border: #ff4d4f;
+
+  --warn-bg: #4a3a00;
+  --warn-border: #d4a017;
+}
+
+/* ------------------------------------------------------------
+   SHARED UI ELEMENTS
+------------------------------------------------------------ */
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background: var(--accent-light);
+  color: var(--text);
+}
+
+input {
+  padding: 8px;
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------------------
+   ALERTS
+------------------------------------------------------------ */
+
+.error {
+  background: var(--error-bg);
+  border-left: 4px solid var(--error-border);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.loading {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-border);
+  padding: 10px;
+  margin-top: 20px;
+}
