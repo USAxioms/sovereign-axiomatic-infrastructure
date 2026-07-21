@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "ui-core": {
+      "version": "1.0.0",
+      "entry": "@/modules/UICore.js"
+    },
+    "analytics": {
+      "version": "1.2.3",
+      "entry": "@/modules/AnalyticsModule.js"
+    }
+  }
+}
